@@ -7,9 +7,9 @@
 volatile int rate[10];                    // array to hold last ten IBI values
 volatile unsigned long sampleCounter = 0;          // used to determine pulse timing
 volatile unsigned long lastBeatTime = 0;           // used to find IBI
-volatile int P =2048;                      // used to find peak in pulse wave, seeded
-volatile int T = 2048;                     // used to find trough in pulse wave, seeded
-volatile int thresh = 2048;                // used to find instant moment of heart beat, seeded
+volatile int P =4096;                      // used to find peak in pulse wave, seeded
+volatile int T = 4096;                     // used to find trough in pulse wave, seeded
+volatile int thresh = 4096;                // used to find instant moment of heart beat, seeded
 volatile int amp = 410;                   // used to hold amplitude of pulse waveform, seeded
 volatile boolean firstBeat = true;        // used to seed rate array so we startup with reasonable BPM
 volatile boolean secondBeat = false;      // used to seed rate array so we startup with reasonable BPM
